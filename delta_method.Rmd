@@ -129,7 +129,7 @@ ggplot(test_1_plot_data, aes(x = Lift, y = P_Value, color = Test)) + geom_line()
   geom_hline(yintercept = alpha, linetype = "dashed") +
   scale_x_continuous(labels = scales::percent, 
                      breaks = c(.065, .0675, .07, .0725)) +
-  ggtitle("Test 1 P-Values for Different Lifts")
+  ggtitle("Test 1 P-Values vs. Lift")
 
 ```
 
@@ -162,7 +162,7 @@ test_2_plot_data <- data.frame("Test" = c(rep("Absolute", length(test_2_lifts)),
 ggplot(test_2_plot_data, aes(x = Lift, y = P_Value, color = Test)) + geom_line() +
   geom_hline(yintercept = alpha, linetype = "dashed") +
   scale_x_continuous(labels = scales::percent) +
-  ggtitle("Test 2 P-Values for Different Lifts")
+  ggtitle("Test 2 P-Values vs. Lift")
 ```
 
 ## Further Discussion Topics
